@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+.carousel-indicators {
+    bottom: -4em;
+}
+
 .carousel-indicators > li {
     height: 20px;
     width: 20px;
@@ -21,6 +25,12 @@
 
 .carousel-item {
     display: block;
+    margin-right: 1em;
+}
+
+.carousel-item.active {
+    width: 120%;
+    transition: transform .6s ease;
 }
 
 .card {
