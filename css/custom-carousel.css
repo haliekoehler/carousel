@@ -1,0 +1,30 @@
+.carousel {
+    width: 100%;
+}
+
+.carousel-indicators > li {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: lightgrey;
+}
+
+.carousel-indicators > li.active {
+    background-color: grey;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.carousel-item {
+    display: block;
+}
+
+.card {
+    height: 100%;
+}
+
+
