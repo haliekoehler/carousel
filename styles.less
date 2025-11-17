@@ -1,53 +1,54 @@
 .carousel {
     width: 100%;
-}
-
-.carousel-indicators {
-    bottom: -4em;
-}
-
-.carousel-indicators > li {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: lightgrey;
-}
-
-.carousel-indicators > li.active {
-    background-color: grey;
-}
-
-.carousel-inner {
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 1em;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
+    flex-direction: column-reverse;
+
+    .carousel-indicators {
+        position: relative;
+        bottom: 0;
+
+        li {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: lightgrey;
+            &.active{
+                background-color: grey;
+            }
+        }
+    }
+
+    .carousel-inner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-bottom: 1em;
+        padding: 1em;
+        height: 600px;
+        width: 100%;
+
+        .carousel-item {
+            display: block;
+            margin-right: 1em;
+            opacity: 0.75;
+            box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.10);
+            border-radius: 18px;
+            height: 98%;
+
+            &.active {
+                opacity: 1;
+                height: 100%;
+                transition: height .25s ease;
+            }
+
+            .card {
+                border-radius: 18px;
+                padding: 1em;
+                border: none;
+                min-width: 500px;
+            }
+        }
+    }
+
 }
-
-.carousel-item {
-    display: block;
-    white-space: normal;
-    margin-right: 1em;
-    min-width: 400px;
-    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.10);
-    border-radius: 18px;
-}
-
-.carousel-item.active {
-    min-width: 425px;
-    transition: min-width 0.5s ease-in-out;
-
-}
-
-.card {
-    height: 600px;
-    width: 100%;
-    padding: 1.5em;
-    border-radius: 18px;
-    border: none;
-}
-
-
