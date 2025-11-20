@@ -8,13 +8,14 @@
   bottom: 0;
 }
 .carousel .carousel-indicators li {
-  height: 20px;
-  width: 20px;
+  height: 17px;
+  width: 17px;
   border-radius: 50%;
-  background-color: lightgrey;
+  background-color: #bbbbbb;
+  margin: 0 5px;
 }
 .carousel .carousel-indicators li.active {
-  background-color: grey;
+  background-color: #333333;
 }
 .carousel .carousel-inner {
   display: flex;
@@ -22,26 +23,44 @@
   flex-wrap: nowrap;
   align-items: center;
   margin-bottom: 1em;
-  padding: 1em;
-  height: 600px;
+  padding: 2em;
+  height: 550px;
   width: 100%;
 }
 .carousel .carousel-inner .carousel-item {
   display: block;
   margin-right: 1em;
   opacity: 0.75;
-  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
   border-radius: 18px;
-  height: 98%;
+  height: 95%;
+  max-width: 400px;
 }
 .carousel .carousel-inner .carousel-item.active {
   opacity: 1;
   height: 100%;
+  box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.3);
   transition: height 0.25s ease;
 }
+.carousel .carousel-inner .carousel-item.active .card h3 {
+  color: #0273FC;
+}
 .carousel .carousel-inner .carousel-item .card {
+  display: flex;
+  flex-direction: column;
   border-radius: 18px;
   padding: 1em;
   border: none;
-  min-width: 500px;
+}
+.carousel .carousel-inner .carousel-item .card .card-img-top {
+  margin-bottom: 1em;
+  max-width: 100%;
+  max-height: 195px;
+}
+.carousel .carousel-inner .carousel-item .card .card-body {
+  padding: 1em 0;
+}
+.carousel .carousel-inner .carousel-item .card h3 {
+  color: #005A8C;
+  margin-bottom: 1em;
 }
