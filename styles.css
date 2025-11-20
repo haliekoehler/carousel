@@ -35,7 +35,7 @@
   border-radius: 18px;
   height: 95%;
   max-width: 400px;
-  min-width: 250px;
+  min-width: 300px;
 }
 .carousel .carousel-inner .carousel-item.active {
   opacity: 1;
@@ -60,8 +60,12 @@
 }
 .carousel .carousel-inner .carousel-item .card .card-body {
   padding: 1em 0;
+  font-family: 'Poppins';
 }
 .carousel .carousel-inner .carousel-item .card h3 {
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  font-style: normal;
   color: #005A8C;
   margin-bottom: 1em;
 }
